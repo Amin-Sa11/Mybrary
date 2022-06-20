@@ -1,0 +1,10 @@
+<h2>Search Autors</h2>
+<form action="/authors" method="get">
+    <label>Name</label>
+    <input type="text" name= 'name' value="<%= searchOptions %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% for (i of authors){ %>
+    <div><%= i.name %></div>
+<% } %>  
