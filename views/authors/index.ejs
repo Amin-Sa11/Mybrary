@@ -7,4 +7,7 @@
 <br>
 <% for (i of authors){ %>
     <div><%= i.name %></div>
+    <a href="/authors/<%= i.id %> ">View</a>
+    <a href="/authors/<%= i.id %>/edit ">Edit</a>
+    <%- include('../partials/deleteForm.ejs', {url: `/authors/${i.id}`}) %> 
 <% } %>  
