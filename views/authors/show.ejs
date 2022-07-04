@@ -5,6 +5,10 @@
 <% if(booksByAuthor.length > 0){ %>
     <h2>Books By Author</h2>
     <%for(i of booksByAuthor){ %>
-        <div><img height="150" width="100" src="<%= i.coverImagePath %> " alt="book results"></div>
+        <div>
+            <a href="/books/<%=i.id%> ">
+                <img height="150" width="100" src="<%= i.coverImagePath %> " alt="book results">
+            </a>
+        </div>
     <% } %>  
 <% } %>  

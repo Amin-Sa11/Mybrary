@@ -2,6 +2,10 @@
 
 <div>
     <% for (i of books){ %>
-        <div><img height="150" width="100" src="<%= i.coverImagePath %> " alt="book results"></div>
+        <div>
+            <a href="/books/<%=i.id%>">
+                <img height="150" width="100" src="<%= i.coverImagePath %> " alt="book results">
+            </a>
+        </div>
     <% } %>
 </div>
