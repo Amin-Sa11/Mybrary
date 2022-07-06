@@ -1,11 +1,3 @@
 <h2 class="page-header">Recently Added</h2>
 
-<div>
-    <% for (i of books){ %>
-        <div>
-            <a href="/books/<%=i.id%>">
-                <img height="150" width="100" src="<%= i.coverImagePath %> " alt="book results">
-            </a>
-        </div>
-    <% } %>
-</div>
+<%-include('partials/bookGrid', {books: books, large: true})%>

@@ -1,0 +1,83 @@
+:root{
+    --form-label-font-size : 1.2rem;
+    --form-text-font-size : 1.0rem;
+    --form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
+    --form-input-background-color: hsl(var(--color-base-hue), 90%, 34%);
+    --form-input-text-color: hsl(var(--color-base-hue), 95%, 95%);
+    --form-input-border-color-light: hsl(var(--color-base-hue), 100%, 85%);
+    --form-select-input-background-color: hsl(var(--color-base-hue), 90%, 18%);
+}
+
+.form-row{
+    display: flex;
+    margin-bottom: 1.1rem;
+}
+.form-row-end{
+    justify-content: flex-end;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 2rem;
+    flex-basis: 0;
+}
+
+.form-item:first-child{
+    margin-left: 0;
+}
+
+.form-item-no-grow{
+    flex-grow: 0;
+}
+
+
+.form-item label{
+    font-size: var(--form-label-font-size);
+    margin-bottom: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.form-item input, .form-item select, .form-item textarea{
+    height: 1.8rem;
+    padding: 0.2rem 0.4rem;
+    font-size: var(--form-text-font-size);
+    font-family: 'NanumGothic';
+    font-weight: normal;
+    border-radius: 0.25rem;
+    border: 1px solid var(--form-input-border-color);
+    background-color: var(--form-input-background-color);
+    color: var(--form-input-text-color);
+    outline: none;
+}
+
+.form-item textarea{
+    height: 100%;
+    resize: none;
+}
+
+.form-item select option{
+    background-color: var(--form-select-input-background-color);
+}
+
+.form-item input:focus, .form-item select:focus, .form-item textarea:focus{
+    border-color: var(--form-input-border-color-light);
+}
+
+.filepond--root {
+    font-family: 'NanumGothic';
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.filepond--panel-root {
+    background-color: var(--form-input-background-color);
+    border: 1px solid var(--form-input-border-color);
+}
+
+.filepond--drop-label {
+    color: var(--color-text-light);
+    font-size: inherit;
+    
+}
